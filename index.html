@@ -276,13 +276,13 @@
 		</div>
 	</section>
 
-	<section class="popup is_acted" v-bind:class="{ is_acted: popupIndex == 10 }">
-		<div class="formGroup">
+	<section class="popup is_acted" v-bind:class="{ is_acted: popupIndex != 0 }">
+		<div class="formGroup popup_message">
 			{{msg}}
 		</div>
 	</section>
 
-	<div class="slide_popup "> is_acted
+	<div class="slide_popup">
 		<div class="popup_item">
 			<div class="intro">
 				<h5>全戶型空氣清淨機</h5>
