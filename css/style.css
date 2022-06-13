@@ -13,7 +13,7 @@ img {
 }
 
 body {
-  background: #fff;
+  background: #f5f6f6;
   font-family: 'Noto Serif TC', serif;
 }
 
@@ -34,7 +34,7 @@ section .theme {
   position: relative;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme {
     min-height: auto;
   }
@@ -135,7 +135,7 @@ section .theme .container {
   overflow: hidden;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme .container {
     padding: 100px 0 0;
   }
@@ -146,7 +146,7 @@ section .theme .container .intro {
   float: left;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme .container .intro {
     width: 90%;
     margin: 0 5%;
@@ -162,6 +162,12 @@ section .theme .container .intro h4 {
   letter-spacing: 2px;
 }
 
+@media (max-width: 800px) {
+  section .theme .container .intro h4 {
+    font-size: 4.5vw;
+  }
+}
+
 section .theme .container .intro h3 {
   font-size: 42px;
   font-weight: 600;
@@ -170,6 +176,12 @@ section .theme .container .intro h3 {
   text-align: center;
   margin: 40px 0;
   line-height: 1.4;
+}
+
+@media (max-width: 800px) {
+  section .theme .container .intro h3 {
+    font-size: 6vw;
+  }
 }
 
 section .theme .container .intro p {
@@ -182,9 +194,11 @@ section .theme .container .intro p {
   line-height: 1.4;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme .container .intro p {
-    margin-bottom: 60px;
+    width: 90%;
+    margin: 0 auto 60px;
+    font-size: 3.2vw;
   }
 }
 
@@ -194,7 +208,7 @@ section .theme .container .photo {
   position: relative;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme .container .photo {
     width: 100%;
   }
@@ -221,7 +235,7 @@ section .theme .container ul li {
   overflow: hidden;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme .container ul li {
     width: 80%;
     margin: 0 10% 40px;
@@ -265,7 +279,7 @@ section .theme .container ul li:nth-child(3) {
   margin-right: -4px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme .container ul li:nth-child(2) .title {
     float: right;
   }
@@ -276,10 +290,10 @@ section .theme .container .logo {
   margin: 0 auto;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme .container .logo {
     width: 40%;
-    margin-top: 150px;
+    margin-top: calc(48% - 100px);
   }
 }
 
@@ -288,10 +302,11 @@ section .theme .container .info {
   margin: 60px auto 0;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme .container .info {
     width: 30%;
-    margin-bottom: 150px;
+    margin-top: 30px;
+    margin-bottom: 48%;
   }
 }
 
@@ -305,6 +320,12 @@ section .theme .container .infotitle {
   letter-spacing: 2px;
 }
 
+@media (max-width: 800px) {
+  section .theme .container .infotitle {
+    font-size: 6vw;
+  }
+}
+
 section .theme .container .infotitle span {
   font-size: 28px;
   display: block;
@@ -312,10 +333,23 @@ section .theme .container .infotitle span {
   letter-spacing: 0;
 }
 
+@media (max-width: 800px) {
+  section .theme .container .infotitle span {
+    font-size: 4vw;
+  }
+}
+
 section .theme .container hr {
   width: 340px;
   margin: 60px auto 0;
-  border: 1px solid #fff;
+  border: 0;
+  border-top: 1px solid #fff;
+}
+
+@media (max-width: 800px) {
+  section .theme .container hr {
+    width: 40%;
+  }
 }
 
 section .theme .container .infocontent {
@@ -326,6 +360,12 @@ section .theme .container .infocontent ul {
   width: 450px;
   margin: 0 auto;
   list-style: none;
+}
+
+@media (max-width: 800px) {
+  section .theme .container .infocontent ul {
+    width: 62vw;
+  }
 }
 
 section .theme .container .infocontent ul li {
@@ -340,6 +380,13 @@ section .theme .container .infocontent ul li {
   margin: 0;
 }
 
+@media (max-width: 800px) {
+  section .theme .container .infocontent ul li {
+    width: 100%;
+    font-size: 3.2vw;
+  }
+}
+
 section .theme .container .infocontent ul li span {
   color: #c49c62;
   display: inline-block;
@@ -349,12 +396,14 @@ section .theme .container .formBox {
   width: 500px;
   margin: 0 auto;
   padding-top: 80px;
+  margin-top: 60px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme .container .formBox {
     width: 90%;
-    margin: 60px auto;
+    padding-bottom: 40px;
+    margin-top: 0;
   }
 }
 
@@ -368,20 +417,15 @@ section .theme .container .formBox .item input, section .theme .container .formB
   -webkit-appearance: none;
   -ms-appearance: none;
   border: 0;
-  padding: 10px;
   position: relative;
-}
-
-section .theme .container .formBox .item input:first-child, section .theme .container .formBox .item button:first-child {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 section .theme .container .formBox .item input {
   width: 100%;
-  height: 48px;
+  height: 42px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid #000;
   padding: 0 10px;
   font-size: 20px;
 }
@@ -443,37 +487,44 @@ section .theme .container .formBox .item input[type="checkbox"]:checked:after {
 
 section .theme .container .formBox .item ::-webkit-input-placeholder {
   /* CSS 3 標準 */
-  color: #000;
+  color: #4d4d4d;
+  font-size: 16px;
 }
 
 section .theme .container .formBox .item :-ms-input-placeholder {
   /* CSS 3 標準 */
-  color: #000;
+  color: #4d4d4d;
+  font-size: 16px;
 }
 
 section .theme .container .formBox .item ::-ms-input-placeholder {
   /* CSS 3 標準 */
-  color: #000;
+  color: #4d4d4d;
+  font-size: 16px;
 }
 
 section .theme .container .formBox .item ::placeholder {
   /* CSS 3 標準 */
-  color: #000;
+  color: #4d4d4d;
+  font-size: 16px;
 }
 
 section .theme .container .formBox .item ::-webkit-input-placeholder {
   /* Chrome, Safari */
-  color: #000;
+  color: #4d4d4d;
+  font-size: 16px;
 }
 
 section .theme .container .formBox .item :-ms-input-placeholder {
   /* IE 10+ */
-  color: #000;
+  color: #4d4d4d;
+  font-size: 16px;
 }
 
 section .theme .container .formBox .item ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #000;
+  color: #4d4d4d;
+  font-size: 16px;
   opacity: 1;
 }
 
@@ -487,6 +538,7 @@ section .theme .container .formBox p {
 
 section .theme .container .formBox .agree {
   font-family: 'Noto Sans TC', serif;
+  margin-bottom: 20px;
 }
 
 section .theme .container .formBox button {
@@ -494,8 +546,8 @@ section .theme .container .formBox button {
   height: 50px;
   display: block;
   margin: 0 auto;
-  margin-top: 40px;
-  font-size: 24px;
+  font-size: 16px;
+  line-height: 50px;
   background-color: #c49c62;
   color: #fff;
   border: 0;
@@ -522,12 +574,12 @@ section .theme .container .formBox button:hover {
 section .theme .container footer {
   width: 100%;
   background-color: #002827;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme .container footer {
     position: static;
   }
@@ -540,7 +592,7 @@ section .theme .container footer ul.contact {
 }
 
 section .theme .container footer ul.contact li {
-  width: calc( (100% - 3px) / 4);
+  width: calc( (100% - 1px) / 2);
   float: left;
   margin-right: 0;
   border-right: 1px solid rgba(255, 255, 255, 0.3);
@@ -550,7 +602,7 @@ section .theme .container footer ul.contact li:last-child {
   border: 0;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme .container footer ul.contact li {
     margin: 0;
   }
@@ -574,15 +626,25 @@ section .theme .container footer ul.contact li a img {
   vertical-align: middle;
 }
 
-@media (max-width: 960px) {
-  section .theme .container footer ul.contact li a img {
-    display: block;
-    margin: 0 auto;
+section .themehome {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  section .themehome {
+    width: auto;
+    height: 100vh;
   }
 }
 
-@media (max-width: 960px) {
-  section .themehome {
+section .themehome video {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  section .themehome video {
     width: auto;
     height: 100vh;
   }
@@ -590,15 +652,22 @@ section .theme .container footer ul.contact li a img {
 
 section .theme9 {
   position: relative;
-  background: url(../img/theme9_bgl.jpg) left center no-repeat, url(../img/theme9_bgr.jpg) right center no-repeat, #002827;
-  background-size: contain;
+  background: url(../img/theme9_bgl.jpg) left center no-repeat, url(../img/theme9_bgr.jpg) right center no-repeat, #0e2626;
+  background-size: auto 100%;
+}
+
+@media (max-width: 800px) {
+  section .theme9 {
+    background: url(../img/theme9_bgm.jpg) center center no-repeat #0e2626;
+    background-size: cover;
+  }
 }
 
 section .theme10 {
-  background-color: #002827;
+  background-color: #0e2626;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   section .theme10 {
     padding-bottom: 100px;
   }
@@ -609,12 +678,48 @@ section .theme11 {
   background-color: #b6b6b6;
 }
 
+section .theme11::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 50%;
+  border-style: solid;
+  border-width: 180px 960px 0 0;
+  border-color: #0e2626 transparent transparent transparent;
+}
+
+@media (max-width: 800px) {
+  section .theme11::before {
+    border-width: 150px 400px 0 0;
+  }
+}
+
+section .theme11::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: calc(50% - 1px);
+  border-style: solid;
+  border-width: 0 960px 180px 0;
+  border-color: transparent #0e2626 transparent transparent;
+}
+
+@media (max-width: 800px) {
+  section .theme11::after {
+    border-width: 0 400px 150px 0;
+  }
+}
+
 section .theme11 .infotitle {
   width: 100%;
   height: 180px;
   padding-top: 20px;
-  background: url(../img/theme11_bg.jpg) center top no-repeat #b6b6b6;
-  background-size: 100% 100%;
   font-size: 42px;
   text-align: center;
   color: #ffffff;
@@ -623,10 +728,18 @@ section .theme11 .infotitle {
   font-weight: 600;
   letter-spacing: 2px;
   position: absolute;
+  z-index: 5;
   top: 0px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media (max-width: 800px) {
+  section .theme11 .infotitle {
+    height: 120px;
+    font-size: 6vw;
+  }
 }
 
 section .theme11 .infotitle span {
@@ -634,6 +747,12 @@ section .theme11 .infotitle span {
   display: block;
   font-weight: 800;
   letter-spacing: 0;
+}
+
+@media (max-width: 800px) {
+  section .theme11 .infotitle span {
+    font-size: 4vw;
+  }
 }
 
 .popup {
@@ -760,17 +879,8 @@ section .theme11 .infotitle span {
     width: 50px;
     height: 50px;
     padding: 5px;
-    right: -25px;
+    right: 0;
     top: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .slide_popup .close {
-    width: 40px;
-    height: 40px;
-    right: -10px;
-    top: 10px;
   }
 }
 
@@ -790,7 +900,7 @@ section .theme11 .infotitle span {
 }
 
 .slide_popup .close:hover, .slide_popup .close:focus {
-  background-color: #3d93ab;
+  background-color: #012826;
 }
 
 .slide_popup .popup_item {
@@ -808,9 +918,25 @@ section .theme11 .infotitle span {
   margin: auto;
 }
 
+@media (max-width: 800px) {
+  .slide_popup .popup_item {
+    height: 60vw;
+    padding: 40px 0;
+    background-size: 50% auto;
+  }
+}
+
 .slide_popup .popup_item .intro {
   width: 42%;
   float: left;
+}
+
+@media (max-width: 800px) {
+  .slide_popup .popup_item .intro {
+    width: 60%;
+    float: unset;
+    margin-left: 40px;
+  }
 }
 
 .slide_popup .popup_item .intro h5 {
@@ -823,6 +949,13 @@ section .theme11 .infotitle span {
   line-height: 1.4;
 }
 
+@media (max-width: 800px) {
+  .slide_popup .popup_item .intro h5 {
+    margin: 10px 0;
+    font-size: 3.2vw;
+  }
+}
+
 .slide_popup .popup_item .intro p {
   width: 100%;
   font-size: 20px;
@@ -833,10 +966,24 @@ section .theme11 .infotitle span {
   line-height: 1.4;
 }
 
+@media (max-width: 800px) {
+  .slide_popup .popup_item .intro p {
+    font-size: 2.2vw;
+    margin-bottom: 40px;
+  }
+}
+
 .slide_popup .popup_item .photo {
   width: 52%;
   float: right;
   position: relative;
+}
+
+@media (max-width: 800px) {
+  .slide_popup .popup_item .photo {
+    width: 100%;
+    float: unset;
+  }
 }
 
 .slide_popup.is_acted {
