@@ -405,6 +405,7 @@
             },
             sendEmail: function() {
                 var self = this;
+                var tomail = "yishuan0609@gmail.com" //信箱
 
                 var subject = "我要預約璟都劍橋看房" //信件主旨
                 var content = "姓名:" + self.name + "\n" +
@@ -427,7 +428,7 @@
                 self.msg = "表單傳送中...。"
                 self.popupIndex = 10
 
-                fetch('https://script.google.com/macros/s/AKfycbyOZkRoUVLwYES9AlkIabwCDltHwjrkQ5DYZBOIE33yozRkHpZhdMCeVwbZ37auB9VOqA/exec?subject=' + Base64.encodeURI(subject) + '&body=' + Base64.encodeURI(content), {
+                fetch('https://script.google.com/macros/s/AKfycbwXDhc3OXer4fcyah3fOyisV4pbNDb_X6x6iNq1myZNbJ3GA0WCIjIsBB2v6Vc_3j6iAA/exec?subject=' + Base64.encodeURI(subject) + '&body=' + Base64.encodeURI(content) + "&to=" + Base64.encodeURI(tomail), {
                         headers: {
                             "Content-Type": "application/x-www-form-urlencoded"
                         }
