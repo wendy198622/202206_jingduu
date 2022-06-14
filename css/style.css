@@ -397,6 +397,9 @@ section .theme .container .formBox {
   margin: 0 auto;
   padding-top: 80px;
   margin-top: 60px;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 5;
 }
 
 @media (max-width: 800px) {
@@ -575,6 +578,7 @@ section .theme .container footer {
   width: 100%;
   background-color: #002827;
   position: fixed;
+  z-index: 10;
   bottom: 0;
   left: 0;
 }
