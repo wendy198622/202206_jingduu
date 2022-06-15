@@ -65,7 +65,7 @@ section .theme .logoBox {
 
 @media (max-width: 800px) {
   section .theme .logoBox {
-    width: 75%;
+    width: 60%;
     height: auto;
   }
 }
