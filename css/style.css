@@ -28,6 +28,11 @@ body {
   }
 }
 
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
 section .theme {
   width: 100%;
   min-height: 100vh;
@@ -52,6 +57,7 @@ section .theme .logoBox {
   background-image: url(../img/themehome_logo_en.svg);
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 100% auto;
   opacity: 0;
   -webkit-animation: logos 14s infinite both;
           animation: logos 14s infinite both;
@@ -59,7 +65,8 @@ section .theme .logoBox {
 
 @media (max-width: 800px) {
   section .theme .logoBox {
-    width: 80%;
+    width: 75%;
+    height: auto;
   }
 }
 

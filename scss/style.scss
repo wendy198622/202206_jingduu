@@ -30,6 +30,8 @@ i.material-icons{
 }
 
 section{
+    width: 100%;
+    overflow: hidden;
     .theme{
         width: 100%;
         min-height: 100vh;
@@ -50,10 +52,12 @@ section{
             background-image: url(../img/themehome_logo_en.svg);
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: 100% auto;
             opacity: 0;
             animation: logos 14s infinite both;
             @media (max-width:800px) {
-                width: 80%;
+                width: 75%;
+                height: auto;
             }
    
             @keyframes logos {
