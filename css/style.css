@@ -57,6 +57,12 @@ section .theme .logoBox {
           animation: logos 14s infinite both;
 }
 
+@media (max-width: 800px) {
+  section .theme .logoBox {
+    width: 80%;
+  }
+}
+
 @-webkit-keyframes logos {
   0% {
     background-image: url(../img/themehome_logo_en.svg);
@@ -633,6 +639,7 @@ section .theme .container footer ul.contact li a img {
 section .themehome {
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 @media (max-width: 800px) {

@@ -52,6 +52,9 @@ section{
             background-repeat: no-repeat;
             opacity: 0;
             animation: logos 14s infinite both;
+            @media (max-width:800px) {
+                width: 80%;
+            }
    
             @keyframes logos {
                 0%  { background-image: url(../img/themehome_logo_en.svg); opacity: 0;}
@@ -483,6 +486,7 @@ section{
     .themehome{
         width: 100%;
         height: auto;
+        overflow: hidden;
         @media (max-width:800px) {
             width: auto;
             height: 100vh;
