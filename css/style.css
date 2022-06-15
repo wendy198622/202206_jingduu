@@ -65,7 +65,7 @@ section .theme .logoBox {
 
 @media (max-width: 800px) {
   section .theme .logoBox {
-    width: 60%;
+    width: 280px;
     height: auto;
   }
 }
@@ -590,7 +590,7 @@ section .theme .container .formBox button:hover {
 section .theme .container footer {
   width: 100%;
   background-color: #002827;
-  position: fixed;
+  position: absolute;
   z-index: 10;
   bottom: 0;
   left: 0;
